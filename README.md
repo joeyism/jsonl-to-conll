@@ -4,7 +4,7 @@ A simple tool to convert JSONL to CONLL
 ## Installation
 To install, run
 ```bash
-pip3 install --user jsonl_to_conll
+pip3 install --user jsonl-to-conll
 ```
 
 ## Usage
