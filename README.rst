@@ -11,7 +11,7 @@ To install, run
 
 .. code-block:: bash
 
-   pip3 install --user jsonl_to_conll
+   pip3 install --user jsonl-to-conll
 
 Usage
 -----
