@@ -5,6 +5,7 @@ def json_to_text(jsons, output_filename):
     for each_json in jsons:
       for line in each_json:
         f.writelines(" ".join(line) + "\n")
+      f.writelines("\n")
 
 def read_jsonl(filename):
   result = []
