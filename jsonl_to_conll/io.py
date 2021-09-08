@@ -1,15 +1,12 @@
 import json
 
-def json_to_text(jsons, output_filename):
+def json_to_text(jsons, output_filename, separator):
   with open(output_filename, "w") as f:
     for each_json in jsons:
       for line in each_json:
-        f.writelines(" ".join(line) + "\n")
-      f.writelines("\n")
+        f.write(separator.join(line) + "\n")
+      f.write("\n")
 
 def read_jsonl(filename):
-  result = []
   with open(filename, "r") as f:
-    for line in f.readlines():
-      result.append(json.loads(line))
-  return result
+    return [json.loads(line) for line in f if line.strip()]
